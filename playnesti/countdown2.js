@@ -1,5 +1,5 @@
-var countDownDate = new Date("June 12, 2026 18:00:00").getTime();
-var endDate = new Date("June 14, 2026 18:30:00").getTime();
+var countDownDate = new Date("July 3, 2026 18:00:00").getTime();
+var endDate = new Date("July 5, 2026 18:30:00").getTime();
 var x;
 
 function updateCountdown() {
