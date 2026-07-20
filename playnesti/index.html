@@ -136,36 +136,34 @@
         z-index: 105;
       }
 
-      @keyframes marquee {
-        0% {
+      @keyframes sponsors-scroll {
+        from {
           transform: translateX(0);
         }
 
-        100% {
-          transform: translateX(-100%);
+        to {
+          transform: translateX(-33.3333%);
         }
-      }
-
-      @keyframes marquee-reverse {
-        0% {
-          transform: translateX(-100%);
-        }
-
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      .animate-marquee {
-        animation: marquee 40s linear infinite;
-      }
-
-      .animate-marquee-reverse {
-        animation: marquee-reverse 40s linear infinite;
       }
 
       .sponsors-marquee {
-        animation: marquee 120s linear infinite;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .sponsors-track {
+        display: flex;
+        width: max-content;
+        animation: sponsors-scroll 40s linear infinite;
+        will-change: transform;
+      }
+
+      .sponsors-track > div {
+        flex: 0 0 auto;
+      }
+
+      .sponsors-track:hover {
+        animation-play-state: paused;
       }
     </style>
   </head>
@@ -193,7 +191,7 @@
         <a href="#sponsors" class="font-ethnocentric text-[9px] px-2.5 py-1 text-white/50 hover:text-white transition-colors uppercase tracking-widest">Parceiros</a>
         <a href="#faq" class="font-ethnocentric text-[9px] px-2.5 py-1 text-white/50 hover:text-white transition-colors uppercase tracking-widest">FAQ</a>
         <a href="#contactos" class="font-ethnocentric text-[9px] px-2.5 py-1 text-white/50 hover:text-white transition-colors uppercase tracking-widest">Contactos</a>
-        <a href="#inscricao" class="ml-3">
+<a href="https://playnesti.uac.pt/play26" class="ml-3" target="_blank" rel="noopener noreferrer">
           <button class="bg-red-700 text-white font-ethnocentric text-[9px] px-4 py-2 rounded-full hover:bg-white hover:text-red-700 transition-all uppercase shadow-[0_0_12px_rgba(185,28,28,0.4)] cursor-pointer"> Inscreve-te </button>
         </a>
       </nav>
@@ -210,7 +208,7 @@
             <p class="font-coolvetica text-white text-xl md:text-2xl mb-10 max-w-xl opacity-90 drop-shadow-lg leading-relaxed"> A 12ª edição da PlayNESTI LAN Party volta em 2026 com mais <span class="typed-text text-red-600 underline decoration-red-700/50 decoration-4 underline-offset-8"></span>
             </p>
             <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-              <a href="#inscreve-te">
+              <a href="https://playnesti.uac.pt/play26">
                 <button class="bg-gradient-to-tr from-red-600 to-red-900 text-white px-10 py-4 rounded-full shadow-[0_0_20px_rgba(185,28,28,0.4)] font-ethnocentric text-sm hover:scale-105 transition-transform active:scale-95 cursor-pointer"> Inscreve-te Já </button>
               </a>
               <a href="#torneios" class="font-coolvetica text-white/70 hover:text-white transition-colors py-3 px-6"> Ver Torneios → </a>
@@ -380,7 +378,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -444,7 +442,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -508,7 +506,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -558,7 +556,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -622,7 +620,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -686,7 +684,7 @@
                 </div>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8">Ver Regulamento Técnico</a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -757,7 +755,7 @@
       <p class="font-coolvetica text-xl text-white font-bold">Individual</p>
     </div>
     <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8">Ver Regulamento Técnico</a>
-    <a href="#inscreve-te" class="block w-full mt-4">
+    <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
       <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
     </a>
   </div>
@@ -829,7 +827,7 @@
       <p class="font-coolvetica text-xl text-white font-bold">Individual</p>
     </div>
     <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8">Ver Regulamento Técnico</a>
-    <a href="#inscreve-te" class="block w-full mt-4">
+    <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
       <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
     </a>
   </div>
@@ -900,7 +898,7 @@
       <p class="font-coolvetica text-xl text-white font-bold">Individual</p>
     </div>
     <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8">Ver Regulamento Técnico</a>
-    <a href="#inscreve-te" class="block w-full mt-4">
+    <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
       <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
     </a>
   </div>
@@ -924,7 +922,7 @@
                     <span class="font-ethnocentric text-[9px] text-red-600 tracking-tighter block">Taxa de Entrada</span>
                     <span class="font-coolvetica text-neutral-500 text-xs italic">por pessoa</span>
                   </div>
-                  <span class="font-ethnocentric text-3xl text-white">4€</span>
+                  <span class="font-ethnocentric text-3xl text-white">5€</span>
                 </div>
               </div>
             </div>
@@ -936,7 +934,7 @@
                 <p class="font-coolvetica text-white text-sm leading-relaxed">Lugar garantido, luz e rede. A experiência PlayNESTI sem a participação em torneios!</p>
               </div>
               <a href="./docs/regulamento.pdf" target="_blank" class="font-coolvetica text-white/60 hover:text-white underline underline-offset-8 transition-all text-sm mb-8"> Ver Regulamento Técnico </a>
-              <a href="#inscreve-te" class="block w-full mt-4">
+              <a href="https://playnesti.uac.pt/play26" class="block w-full mt-4">
                 <button class="w-full bg-white text-red-800 font-ethnocentric py-4 rounded-2xl shadow-xl hover:bg-black hover:text-white transition-all active:scale-95 text-sm">INSCREVE-TE JÁ</button>
               </a>
             </div>
@@ -1212,31 +1210,87 @@
   </div>
 
   <!-- Desktop marquee (hidden on mobile) -->
-  <div class="hidden md:block relative overflow-hidden">
-    <div class="flex overflow-hidden">
-      <!-- Only one row needed, JS will clone it -->
-      <div id="marquee-track" class="flex sponsors-marquee whitespace-nowrap flex-shrink-0">
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/gameon.png" alt="GameOn" class="max-h-16 max-w-full object-contain">
-        </div>
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/cmvfc.png" alt="CMVFC" class="max-h-16 max-w-full object-contain">
-        </div>
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/electrolaranjo.png" alt="Electro Laranja" class="max-h-16 max-w-full object-contain">
-        </div>
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/guia.png" alt="Guia" class="max-h-16 max-w-full object-contain">
-        </div>
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/meo.webp" alt="MEO" class="max-h-16 max-w-full object-contain">
-        </div>
-        <div class="flex items-center justify-center h-24 px-14 mx-2">
-          <img src="./images/partners/worten.png" alt="Worten" class="max-h-16 max-w-full object-contain">
-        </div>
+  <div class="hidden md:block overflow-hidden">
+  <div class="sponsors-marquee">
+    <div class="sponsors-track">
+
+      <!-- logos here -->
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/gameon.png" class="max-h-16 object-contain">
       </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/cmvfc.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/electrolaranjo.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/guia.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/meo.webp" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/worten.png" class="max-h-16 object-contain">
+      </div>
+
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/gameon.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/cmvfc.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/electrolaranjo.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/guia.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/meo.webp" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/worten.png" class="max-h-16 object-contain">
+      </div>
+
+            <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/gameon.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/cmvfc.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/electrolaranjo.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/guia.png" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/meo.webp" class="max-h-16 object-contain">
+      </div>
+
+      <div class="flex items-center justify-center h-24 px-14 mx-2 shrink-0">
+        <img src="./images/partners/worten.png" class="max-h-16 object-contain">
+      </div>
+
     </div>
   </div>
+</div>
 </section>
     <section id="faq" class="w-full bg-neutral-50 py-24 border-t border-neutral-200">
   <div class="container mx-auto px-6 max-w-6xl">
@@ -1470,68 +1524,6 @@
           showToast('Erro ao enviar', 'Tenta novamente ou contacta-nos diretamente.', 'error');
         }
       });
-    }
-
-    const track = document.getElementById('marquee-track');
-    if (track) {
-      const parent = track.parentElement;
-      const maxClonesPerRun = 50; // safety cap to avoid runaway DOM
-
-      // Clone until the marquee is guaranteed to cover at least 2x viewport width.
-      // Stop when DOM width is sufficient (prevents gaps), not by iteration count.
-      const ensureMarqueeCoverage = () => {
-        const targetWidth = window.innerWidth * 2;
-
-        const runKey = String(window.innerWidth);
-        if (track.getAttribute('data-marquee-ran') === runKey) {
-          // still allow trigger-driven re-clone (see below)
-        }
-
-        let clonesCreated = 0;
-        const baseChildren = () => Array.from(track.children);
-
-        // If images/fonts are still loading, do 2 quick passes.
-        for (let pass = 0; pass < 2; pass++) {
-          while (track.scrollWidth < targetWidth && clonesCreated < maxClonesPerRun) {
-            const items = baseChildren();
-            for (let i = 0; i < items.length; i++) {
-              track.appendChild(items[i].cloneNode(true));
-              clonesCreated++;
-              if (clonesCreated >= maxClonesPerRun) break;
-            }
-          }
-          if (track.scrollWidth >= targetWidth) break;
-        }
-
-        // Clone the whole track once to help the infinite animation look seamless.
-        if (!parent.querySelector('[data-marquee-wrapper-clone="true"]')) {
-          const wrapperClone = track.cloneNode(true);
-          wrapperClone.setAttribute('aria-hidden', 'true');
-          wrapperClone.setAttribute('data-marquee-wrapper-clone', 'true');
-          wrapperClone.style.cssText = 'position:absolute;left:100%;top:0;';
-          parent.style.position = 'relative';
-          parent.appendChild(wrapperClone);
-        }
-
-        track.setAttribute('data-marquee-ran', runKey);
-      };
-
-      if (document.readyState === 'complete') {
-        ensureMarqueeCoverage();
-      } else {
-        window.addEventListener('load', () => {
-          ensureMarqueeCoverage();
-        }, { once: true });
-      }
-
-      // Continuously reclone (infinite) when the animation is running.
-      // To keep it from exploding in size, ensureMarqueeCoverage() adds clones only until
-      // the track is wide enough (2x viewport) and uses a wrapper clone.
-      // This keeps the marquee always filled even if layout shifts mid-animation.
-      const marqueeDurationMs = 120 * 1000; // matches .sponsors-marquee animation
-      window.setInterval(() => {
-        requestAnimationFrame(() => ensureMarqueeCoverage());
-      }, marqueeDurationMs);
     }
 
     if (menuToggle && menu && header) {
